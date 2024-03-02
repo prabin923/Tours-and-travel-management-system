@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: black;
+}
+
+.container{
+    width: 400px;
+    background: #111;
+    margin-top: 250px;
+    padding: 20px 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .star-widget {
+    display: flex;
+    grid-gap: 20px;
+}
+
+ .container .starwidget a{
+    color: #444;
+    padding: 10px;
+    float: right;
+    font-size: 35px;
+    transition: .5s;
+ }
+
+ .container .starwidget a.active{
+    color: gold;
+ }
+
+ header{
+    color: grey;
+    font-size: 25px;
+    margin-bottom: 10pxpx;
+    font-family: 'popins' sans-serif;
+ }
+ 
+ textarea{
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-family: sans-seri'popins' sans-serif;
+
+ }
+ button{
+margin-top: 20px;
+font-size: 15px;
+background-color: grey;
+border: 1px solid gold;
+border-radius: 2px;
+padding: 16px 32px;
+cursor: pointer;
+transition: .6s;
+ }
+ .submit:hover {
+    background-color: gold;
+    color: black;
+    font-family: sans-serif;
+  }

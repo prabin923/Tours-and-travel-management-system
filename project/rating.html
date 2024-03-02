@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="style-rating.css">
+</head>
+<body>
+    <div class="container">
+        <header>How was your experince?</header>
+       <div class="starwidget">
+        
+        <a href="#" class="bi-star-fill"></a>
+        <a href="#" class="bi-star-fill"></a>
+        <a href="#" class="bi-star-fill"></a>
+        <a href="#" class="bi-star-fill"></a>
+        <a href="#" class="bi-star-fill"></a>
+       </div>
+       <textarea name="review" id="review" cols="40" rows="6" placeholder="Write your review" class="textarea"></textarea>
+       <button class="submit">Sumbit</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stars = document.querySelectorAll('.starwidget a');
+
+            stars.forEach((star, index) => {
+                star.addEventListener('click', function () {
+                    toggleStars(index);
+                });
+            });
+
+            function toggleStars(index) {
+                stars.forEach((star, i) => {
+                    if (i >=index) {
+                        star.classList.add('active');
+                    } else {
+                        star.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

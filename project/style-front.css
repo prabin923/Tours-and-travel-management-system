@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'popins', sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(front.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar{
+    width: 100%;
+    margin: 0 150px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #313638;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    text-align: center;
+    color: #2F0601;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: darkred;
+}
+ .button{
+    border: 1px solid #009688;
+    background:#009688 ;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-left: 90px;
+    z-index: 1;
+ }
+ .button a:hover {
+    background: #009688;
+    transition: .7s;
+ }
+.content form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 60px;
+    justify-content: center;
+    margin-left: 25%;
+}
+.content form input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 50px;
+}
+.content form button{
+    font-size: 18px;
+    padding: 10px 30px;
+    margin: 0;
+    margin-left: 120px;
+}
+
+.content form i{
+    width: 15px;  
+}
+.btn{
+    background-color: #009688;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button a{
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    color: #2F0601;
+    font-size: 20px;
+    background-color: transparent;
+}
